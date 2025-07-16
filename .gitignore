@@ -32,3 +32,4 @@ google-services.json
 # love-android specific
 app/src/main/assets/
 app/src/embed/assets/
+*.aab
