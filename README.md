@@ -4,6 +4,11 @@ Copyright (c) 2006-2024 LOVE Development Team
 ![Build Status](https://github.com/love2d/love-android/workflows/build/badge.svg)
 
 Updated with a twist : https://love2d.org/forums/viewtopic.php?t=82514 to have a lighter package
+Used for Solfeguido's [Android app](https://play.google.com/store/apps/details?id=io.github.solfeguido)
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+     alt="Get it on Google Play"
+     height="80">](https://play.google.com/store/apps/details?id=io.github.solfeguido)
 
 Download:
 ---------
