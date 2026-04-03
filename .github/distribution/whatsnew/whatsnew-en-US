@@ -1,5 +1,1 @@
-- Update of internal libraries
-- Better adaptation to phones with screen borders
-- Reduction of the size of black piano keys
-- Addition of subtle effects for the timer
-- Fixed the start jingle that played all notes at once
+- Updated internal libraries
