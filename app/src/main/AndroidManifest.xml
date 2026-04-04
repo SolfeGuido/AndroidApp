@@ -18,11 +18,11 @@
             android:label="Solfeguido">
         <activity
                 android:name="org.love2d.android.GameActivity"
+                android:screenOrientation="landscape"
                 android:exported="true"
                 android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden|navigation"
                 android:label="Solfeguido"
                 android:launchMode="singleInstance"
-                android:resizeableActivity="false"
                 android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <!-- Allow app activity re-created -->
             <meta-data android:name="SDL_ENV.SDL_ANDROID_ALLOW_RECREATE_ACTIVITY" android:value="1"/>
