@@ -12,7 +12,7 @@ jobs:
       - name: Install Dependencies
         run: sudo apt-get install ninja-build cmake
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           submodules: true
       - name: Setup Java 17
