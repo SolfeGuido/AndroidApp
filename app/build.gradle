@@ -14,7 +14,7 @@ android {
         versionName project.properties["app.version_name"]
         minSdk 23
         compileSdk = 35
-        targetSdk 35
+        targetSdk 36
 
         externalNativeBuild {
             cmake {
