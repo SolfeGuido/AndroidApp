@@ -171,11 +171,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.8.0'
     implementation 'com.google.android.material:material:1.14.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.2'
-    implementation 'androidx.navigation:navigation-fragment:2.10.0'
-    implementation 'androidx.navigation:navigation-ui:2.10.0'
+    implementation 'androidx.navigation:navigation-fragment:2.10.2'
+    implementation 'androidx.navigation:navigation-ui:2.10.2'
     implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0'
-    implementation 'com.google.oboe:oboe:1.10.0'
+    implementation 'com.google.oboe:oboe:1.11.0'
 }
 
 // We don't even use Kotlin. Why we have to care about it?

@@ -20,7 +20,7 @@ jobs:
       with:
         submodules: true
     - name: Setup Java 17
-      uses: actions/setup-java@dd06d9cba3e5552c54d9f8ea23572deb30010f7c # v6.0.0
+      uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
       with:
         distribution: temurin
         java-version: 17
@@ -32,36 +32,36 @@ jobs:
       run: bash ./gradlew bundleNormalNoRecordRelease bundleEmbedRecordRelease bundleEmbedNoRecordRelease
     - name: Artifact (Normal debug APK)
       if: ${{ matrix.build_type == 'Debug' }}
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
       with:
         name: love-android-debug.apk
         path: app/build/outputs/apk/normalRecord/debug/app-normal-record-debug.apk
     - name: Artifact (Normal unsigned APK)
       if: ${{ matrix.build_type == 'Release' }}
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
       with:
         name: love-android.apk
         path: app/build/outputs/apk/normalRecord/release/app-normal-record-release-unsigned.apk
     - name: Artifact (Normal AAB w/o recording)
       if: ${{ matrix.build_type == 'Release' }}
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
       with:
         name: love-android-ps.aab
         path: app/build/outputs/bundle/normalNoRecordRelease/app-normal-noRecord-release.aab
     - name: Artifact (Embed AAB)
       if: ${{ matrix.build_type == 'Release' }}
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
       with:
         name: love-android-embed-record.aab
         path: app/build/outputs/bundle/embedRecordRelease/app-embed-record-release.aab
     - name: Artifact (Embed AAB w/o recording)
       if: ${{ matrix.build_type == 'Release' }}
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
       with:
         name: love-android-embed.aab
         path: app/build/outputs/bundle/embedNoRecordRelease/app-embed-noRecord-release.aab
     - name: Artifact (Debug symbols)
-      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
       with:
         name: love-android-unstripped-debugsyms-${{ matrix.build_type }}
         path: app/build/intermediates/cxx
